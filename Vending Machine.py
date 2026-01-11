@@ -115,7 +115,7 @@ def main():
                     if payment == 'cancel':
                         print('__________________________')
                         print('Purchase cancelled')
-                        break
+                        return
                     else:
                         if payment.replace('.','', 1).isdigit():
                             payment = float(payment)
@@ -160,3 +160,4 @@ def main():
             #handles errors
 if __name__ == '__main__':
     main()
+
